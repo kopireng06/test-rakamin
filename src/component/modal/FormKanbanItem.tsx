@@ -1,7 +1,7 @@
 import { Button, Flex, FormControl, FormLabel, Input } from "@chakra-ui/react";
 import { ChangeEvent, useContext, useState } from "react";
 import { useMutation, useQueryClient } from "react-query";
-import { CreateItem, UpdateItem } from "../../domain/item/itemEntitiy";
+import { CreateItem, UpdateItem } from "../../domain/item/itemEntity";
 import { createItem, updateItem } from "../../domain/item/itemService";
 import { ModalContext } from "../../domain/modal/ModalContext";
 
@@ -44,7 +44,7 @@ const CreateTodoItemForm = ({ id_todo }: CreateTodoItemFormProps) => {
 
       return {
         ...prev,
-        [e.target.name]: newValue,
+        [e.target.name]: newValue > 100 ? prev.progress_percentage : newValue,
       };
     });
   };
@@ -150,7 +150,7 @@ const UpdateTodoItemForm = ({
 
       return {
         ...prev,
-        [e.target.name]: newValue,
+        [e.target.name]: newValue > 100 ? prev.progress_percentage : newValue,
       };
     });
   };

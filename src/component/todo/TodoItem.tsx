@@ -12,7 +12,7 @@ import { ReactComponent as ChecklistLogo } from "../../assets/icons/checklist.sv
 import { ReactComponent as SettingLogo } from "../../assets/icons/setting.svg";
 import { DragEventHandler, useRef, useState } from "react";
 import { useOutsideClick } from "../../utils/useOutsiderClick";
-import { Item } from "../../domain/item/itemEntitiy";
+import { Item } from "../../domain/item/itemEntity";
 
 type TodoItemProps = Item & {
   actions: ActionButtonProps[];

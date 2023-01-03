@@ -11,7 +11,7 @@ import { updateItem } from "../domain/item/itemService";
 import { TodoItemProps } from "../component/todo/TodoItem";
 import { useGetTodos } from "../domain/todo/todoHooks";
 import { useGetTodoItems } from "../domain/item/itemHooks";
-import { Item, UpdateItem } from "../domain/item/itemEntitiy";
+import { Item, UpdateItem } from "../domain/item/itemEntity";
 
 type TodoGroupColors = {
   wrapperProps?: BoxProps;

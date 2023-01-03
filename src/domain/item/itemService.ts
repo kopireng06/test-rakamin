@@ -1,5 +1,5 @@
 import { fetcherObj } from "../../utils/fetcher";
-import { CreateItem, Item, UpdateItem, DeleteItem } from "./itemEntitiy";
+import { CreateItem, Item, UpdateItem, DeleteItem } from "./itemEntity";
 
 const getItems = async (
   idTodos: number[]
